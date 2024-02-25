@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+body {
+  width: 960px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul.top_menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(236, 222, 237);
+}
+
+ul.top_menu li {
+  float: left;
+}
+
+ul.top_menu li a {
+  display: block;
+  color: purple;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.top_menu li a:hover {
+  color: blue;
+}
+
+ul.sub_menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(236, 222, 237);
+  min-width: 160px;
+  z-index: 1;
+}
+
+ul.sub_menu li {
+  float: none;
+}
+
+ul.sub_menu li a {
+  color: purple;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+li:hover ul.sub_menu {
+  display: block;
+}
+
+#search_box {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#search_box input[type="text"] {
+  width: 150px;
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+
+#search_box button {
+  padding: 3px;
+  background-color: rgba(16, 148, 239, 255);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search_box button:hover {
+  background-color: red;
+}
+
+section {
+  width: 70%;
+  float: left;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(137, 247, 254) 0%,
+    rgb(102, 166, 255) 90%
+  );
+}
+
+aside {
+  width: 30%;
+  float: right;
+}
+
+#div1 {
+  width: 50%;
+  float: left;
+}
+
+#div2 {
+  width: 50%;
+  float: right;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#div1 p {
+  text-indent: 40px;
+  padding: 13px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+form {
+  padding: 5px;
+  height: 100px;
+  font-size: 23px;
+}
+
+#div2 form fieldset {
+  border-radius: 10px;
+  height: 330px;
+}
+
+#div2 form fieldset legend {
+  text-align: left;
+  /* Căn text nằm ở bên trái */
+}
+
+#div2 form fieldset input[type="text"],
+input[type="email"] {
+  display: block;
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#div2 form fieldset input[type="submit"] {
+  margin-right: 10px;
+}
+
+#div2 form fieldset input[type="submit"],
+input[type="reset"] {
+  padding: 7px;
+  background-color: #ccc;
+  border-radius: 5px;
+  border: none;
+  bottom: 0;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+aside h1 {
+  color: red;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  float: left;
+  width: 960px;
+  height: 50px;
+  background-color: rgba(203, 204, 102, 255);
+  margin: 0 auto;
+}
